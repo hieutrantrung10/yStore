@@ -1,0 +1,14 @@
+C:\Users\Hieu\source\repos\yStore\yStore.Model\bin\Debug\yStore.Model.dll.config
+C:\Users\Hieu\source\repos\yStore\yStore.Model\bin\Debug\yStore.Model.dll
+C:\Users\Hieu\source\repos\yStore\yStore.Model\bin\Debug\yStore.Model.pdb
+C:\Users\Hieu\source\repos\yStore\yStore.Model\bin\Debug\EntityFramework.dll
+C:\Users\Hieu\source\repos\yStore\yStore.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hieu\source\repos\yStore\yStore.Model\bin\Debug\yStore.Common.dll
+C:\Users\Hieu\source\repos\yStore\yStore.Model\bin\Debug\yStore.Common.pdb
+C:\Users\Hieu\source\repos\yStore\yStore.Model\bin\Debug\EntityFramework.xml
+C:\Users\Hieu\source\repos\yStore\yStore.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hieu\source\repos\yStore\yStore.Model\obj\Debug\yStore.Model.csprojAssemblyReference.cache
+C:\Users\Hieu\source\repos\yStore\yStore.Model\obj\Debug\yStore.Model.csproj.CoreCompileInputs.cache
+C:\Users\Hieu\source\repos\yStore\yStore.Model\obj\Debug\yStore.Model.csproj.CopyComplete
+C:\Users\Hieu\source\repos\yStore\yStore.Model\obj\Debug\yStore.Model.dll
+C:\Users\Hieu\source\repos\yStore\yStore.Model\obj\Debug\yStore.Model.pdb

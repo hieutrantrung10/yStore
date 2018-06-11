@@ -1,0 +1,6 @@
+C:\Users\Hieu\source\repos\yStore\yStore.Common\bin\Debug\yStore.Common.dll
+C:\Users\Hieu\source\repos\yStore\yStore.Common\bin\Debug\yStore.Common.pdb
+C:\Users\Hieu\source\repos\yStore\yStore.Common\obj\Debug\yStore.Common.csprojAssemblyReference.cache
+C:\Users\Hieu\source\repos\yStore\yStore.Common\obj\Debug\yStore.Common.csproj.CoreCompileInputs.cache
+C:\Users\Hieu\source\repos\yStore\yStore.Common\obj\Debug\yStore.Common.dll
+C:\Users\Hieu\source\repos\yStore\yStore.Common\obj\Debug\yStore.Common.pdb
