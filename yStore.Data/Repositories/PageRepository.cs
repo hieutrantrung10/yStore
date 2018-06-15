@@ -8,14 +8,13 @@ using yStore.Model.Models;
 
 namespace yStore.Data.Repositories
 {
-    public interface IPostCategoryRepository
+    public interface IPageRepository
     {
 
     }
-    public class PostCategoryRepository : RepositoryBase<PostCategory>,IPostCategoryRepository
+    public class PageRepository : RepositoryBase<Page>, IPageRepository
     {
-        public PostCategoryRepository(IDbFactory dbFactory)
-            : base(dbFactory)
+        public PageRepository(IDbFactory dbFactory) : base(dbFactory)
         {
 
         }
