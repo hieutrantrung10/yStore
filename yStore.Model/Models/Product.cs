@@ -27,7 +27,8 @@ namespace yStore.Model.Models
         public int CategoryID { get; set; }
         [MaxLength(256)]
         public string Image { get; set; }
-        public XElement MoreImage { get; set; }
+        [Column(TypeName = "xml")]
+        public string MoreImage { get; set; }
         public decimal Price { get; set; }
         public decimal? Promotion { get; set; }
         [MaxLength(100)]

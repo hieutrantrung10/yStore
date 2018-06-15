@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace yStore.Model.Abstracts
 {
-    public abstract class Auditable : Auditable
+    public abstract class Auditable : IAuditable
     {
 
         public DateTime? CreatedDate { get; set; }
