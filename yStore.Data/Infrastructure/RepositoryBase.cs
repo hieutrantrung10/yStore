@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace yStore.Data.Infrastructure
 {
-    public abstract class RepositoryBase<T> where T : class
+    public abstract class RepositoryBase<T> : IRepository<T> where T : class
     {
         private yStoreDbContext dataContext;
         private readonly IDbSet<T> dbSet;
@@ -90,7 +90,7 @@ namespace yStore.Data.Infrastructure
             return GetAll(includes).FirstOrDefault(expression);
         }
 
-        public virtual IEnumerable<T> GetMulti(Expression<Func<T, bool>> predicate, string[] includes = null)
+        public virtual IQueryable<T> GetMulti(Expression<Func<T, bool>> predicate, string[] includes = null)
         {
             //HANDLE INCLUDES FOR ASSOCIATED OBJECTS IF APPLICABLE
             if (includes != null && includes.Count() > 0)
@@ -104,7 +104,7 @@ namespace yStore.Data.Infrastructure
             return dataContext.Set<T>().Where<T>(predicate).AsQueryable<T>();
         }
 
-        public virtual IEnumerable<T> GetMultiPaging(Expression<Func<T, bool>> predicate, out int total, int index = 0, int size = 20, string[] includes = null)
+        public virtual IQueryable<T> GetMultiPaging(Expression<Func<T, bool>> predicate, out int total, int index = 0, int size = 20, string[] includes = null)
         {
             int skipCount = index * size;
             IQueryable<T> _resetSet;
@@ -132,5 +132,6 @@ namespace yStore.Data.Infrastructure
             return dataContext.Set<T>().Count<T>(predicate) > 0;
         }
 
+          
     }
 }

@@ -19,7 +19,7 @@ namespace yStore.Data.Infrastructure
 
         T GetSingleByID(int id);
 
-        T GetSingleByID_1(string id);
+        /*T GetSingleByID_1(Expression<Func<T,bool>> id);*/
 
         T GetSingleByCondition(Expression<Func<T, bool>> expression, string[] includes = null);
 

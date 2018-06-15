@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace yStore.Model.Abstracts
 {
-    public interface Auditable
+    public interface IAuditable
     {
         DateTime? CreatedDate { get; set; }
         string CreatedBy { get; set; }
