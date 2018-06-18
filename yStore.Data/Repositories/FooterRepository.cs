@@ -8,7 +8,7 @@ using yStore.Model.Models;
 
 namespace yStore.Data.Repositories
 {
-    public interface IFooterRepository
+    public interface IFooterRepository : IRepository<Footer>
     {
 
     }

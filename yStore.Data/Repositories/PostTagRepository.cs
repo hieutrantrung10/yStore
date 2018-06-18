@@ -8,7 +8,7 @@ using yStore.Model.Models;
 
 namespace yStore.Data.Repositories
 {
-    public interface IPostTagRepository
+    public interface IPostTagRepository : IRepository<PostTag>
     {
 
     }

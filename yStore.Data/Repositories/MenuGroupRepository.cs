@@ -8,7 +8,7 @@ using yStore.Model.Models;
 
 namespace yStore.Data.Repositories
 {
-    public interface IMenuGroupRepository
+    public interface IMenuGroupRepository : IRepository<MenuGroup>
     {
 
     }

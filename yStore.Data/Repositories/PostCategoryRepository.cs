@@ -8,7 +8,7 @@ using yStore.Model.Models;
 
 namespace yStore.Data.Repositories
 {
-    public interface IPostCategoryRepository
+    public interface IPostCategoryRepository : IRepository<PostCategory>
     {
 
     }

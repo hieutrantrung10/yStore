@@ -31,7 +31,16 @@ namespace yStore.Model.Models
         public string Content { get; set; }
         public bool? HomeFlag { get; set; }
         public bool? HotFlag { get; set; }
+        public DateTime CreatedDate { get; set; }
+        [MaxLength(256)]
+        public string CreatedBy { get; set; }
+        public DateTime UpdatedDate { get; set; }
+        [MaxLength(256)]
+        public string UpdatedBy { get; set; }
+        public bool Status { get; set; }
         [ForeignKey("CategoryID")]
         public virtual PostCategory PostCategory { get; set; }
+        
+        public virtual IEnumerable<PostTag> PostTags { get; set; }
     }
 }

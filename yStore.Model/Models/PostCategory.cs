@@ -25,6 +25,8 @@ namespace yStore.Model.Models
         [MaxLength(256)]
         public string Image { get; set; }
         public bool? HomeFlag { get; set; }
+        [Required]
+        public bool Status { get; set; }
         public virtual IEnumerable<Post> Posts { get; set; }
     }
 }

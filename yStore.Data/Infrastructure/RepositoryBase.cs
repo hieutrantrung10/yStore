@@ -132,6 +132,9 @@ namespace yStore.Data.Infrastructure
             return dataContext.Set<T>().Count<T>(predicate) > 0;
         }
 
-          
+        public virtual void Delete(int id)
+        {
+            dbSet.Remove(dbSet.Find(id));
+        }
     }
 }
