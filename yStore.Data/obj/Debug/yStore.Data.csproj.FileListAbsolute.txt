@@ -25,9 +25,11 @@ D:\yStore\yStore.Data\bin\Debug\yStore.Model.dll.config
 D:\yStore\yStore.Data\bin\Debug\EntityFramework.xml
 D:\yStore\yStore.Data\bin\Debug\EntityFramework.SqlServer.xml
 D:\yStore\yStore.Data\obj\Debug\yStore.Data.csprojAssemblyReference.cache
+D:\yStore\yStore.Data\obj\Debug\yStore.Data.Migrations.InitialDB.resources
+D:\yStore\yStore.Data\obj\Debug\yStore.Data.csproj.GenerateResource.cache
 D:\yStore\yStore.Data\obj\Debug\yStore.Data.csproj.CoreCompileInputs.cache
 D:\yStore\yStore.Data\obj\Debug\yStore.Data.csproj.CopyComplete
 D:\yStore\yStore.Data\obj\Debug\yStore.Data.dll
 D:\yStore\yStore.Data\obj\Debug\yStore.Data.pdb
-D:\yStore\yStore.Data\obj\Debug\yStore.Data.Migrations.InitialDB.resources
-D:\yStore\yStore.Data\obj\Debug\yStore.Data.csproj.GenerateResource.cache
+D:\yStore\yStore.Data\obj\Debug\yStore.Data.Migrations.AddErrorLogTable.resources
+D:\yStore\yStore.Data\obj\Debug\yStore.Data.Migrations.UpdateTableName.resources

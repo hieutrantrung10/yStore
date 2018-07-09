@@ -22,6 +22,11 @@ namespace yStore.Data.Repositories
 
         }
 
+        public IEnumerable<Post> GetAllByCategoryId(int cID)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Post> GetAllByTag(string tag, int pageIndex, int pageSize, out int totalRow)
         {
             var query = from p in DbContext.Posts

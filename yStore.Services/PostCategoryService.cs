@@ -11,7 +11,7 @@ namespace yStore.Services
 {
     public interface IPostCategoryService
     {
-        void Add(PostCategory post);
+        PostCategory Add(PostCategory post);
         void Update(PostCategory post);
         void Delete(int id);
         IEnumerable<PostCategory> GetAll();
@@ -28,9 +28,9 @@ namespace yStore.Services
             this._postCategoryRepository = postCategoryRepository;
             this._unitOfWork = unitOfWork;
         }
-        public void Add(PostCategory postcat)
+        public PostCategory Add(PostCategory postcat)
         {
-            _postCategoryRepository.Add(postcat);
+            return _postCategoryRepository.Add(postcat);
         }
 
         public void Delete(int id)
@@ -40,7 +40,7 @@ namespace yStore.Services
 
         public IEnumerable<PostCategory> GetAll()
         {
-            return _postCategoryRepository.GetAll(new string[] { "PostCategory" });
+            return _postCategoryRepository.GetAll();
         }
              
 

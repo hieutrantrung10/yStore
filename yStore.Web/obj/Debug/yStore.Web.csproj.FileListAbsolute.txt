@@ -226,3 +226,15 @@ D:\yStore\yStore.Web\obj\Debug\yStore.Web.csproj.CoreCompileInputs.cache
 D:\yStore\yStore.Web\obj\Debug\yStore.Web.csproj.CopyComplete
 D:\yStore\yStore.Web\obj\Debug\yStore.Web.dll
 D:\yStore\yStore.Web\obj\Debug\yStore.Web.pdb
+D:\yStore\yStore.Web\bin\Autofac.dll
+D:\yStore\yStore.Web\bin\Autofac.Integration.Mvc.dll
+D:\yStore\yStore.Web\bin\Autofac.Integration.WebApi.dll
+D:\yStore\yStore.Web\bin\Microsoft.Owin.dll
+D:\yStore\yStore.Web\bin\Owin.dll
+D:\yStore\yStore.Web\bin\Autofac.xml
+D:\yStore\yStore.Web\bin\Autofac.Integration.Mvc.xml
+D:\yStore\yStore.Web\bin\Autofac.Integration.WebApi.pdb
+D:\yStore\yStore.Web\bin\Autofac.Integration.WebApi.xml
+D:\yStore\yStore.Web\bin\Microsoft.Owin.xml
+D:\yStore\yStore.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\yStore\yStore.Web\bin\Microsoft.Owin.Host.SystemWeb.xml

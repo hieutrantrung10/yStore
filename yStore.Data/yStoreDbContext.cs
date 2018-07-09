@@ -32,6 +32,7 @@ namespace yStore.Data
         public DbSet<SystemConfig> SystemConfigs { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<VirtualStatistic> VirtualStatistics { get; set; }
+        public DbSet<ErrorLog> ErrorLogs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
