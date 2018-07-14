@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -8,7 +9,7 @@ using yStore.Model.Models;
 
 namespace yStore.Data
 {
-    public class yStoreDbContext : DbContext
+    public class yStoreDbContext : IdentityDbContext<ApplicationUser>
     {
         public yStoreDbContext() :  base("yStoreConnection")
         {
@@ -34,9 +35,16 @@ namespace yStore.Data
         public DbSet<VirtualStatistic> VirtualStatistics { get; set; }
         public DbSet<ErrorLog> ErrorLogs { get; set; }
 
+        public static yStoreDbContext Create()
+        {
+            return new yStoreDbContext();
+        }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             /*base.OnModelCreating(modelBuilder);*/
+            modelBuilder.Entity<IdentityUserRole>().HasKey(i => new { i.UserId, i.RoleId });
+            modelBuilder.Entity<IdentityUserLogin>().HasKey(i => i.UserId);            
         }
     }
 }

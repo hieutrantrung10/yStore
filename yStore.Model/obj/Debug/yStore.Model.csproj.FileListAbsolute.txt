@@ -26,3 +26,7 @@ D:\yStore\yStore.Model\obj\Debug\yStore.Model.csproj.CoreCompileInputs.cache
 D:\yStore\yStore.Model\obj\Debug\yStore.Model.csproj.CopyComplete
 D:\yStore\yStore.Model\obj\Debug\yStore.Model.dll
 D:\yStore\yStore.Model\obj\Debug\yStore.Model.pdb
+D:\yStore\yStore.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\yStore\yStore.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\yStore\yStore.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\yStore\yStore.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

@@ -33,3 +33,10 @@ D:\yStore\yStore.Data\obj\Debug\yStore.Data.dll
 D:\yStore\yStore.Data\obj\Debug\yStore.Data.pdb
 D:\yStore\yStore.Data\obj\Debug\yStore.Data.Migrations.AddErrorLogTable.resources
 D:\yStore\yStore.Data\obj\Debug\yStore.Data.Migrations.UpdateTableName.resources
+D:\yStore\yStore.Data\obj\Debug\yStore.Data.Migrations.UpdatePostData.resources
+D:\yStore\yStore.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\yStore\yStore.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\yStore\yStore.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\yStore\yStore.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\yStore\yStore.Data\obj\Debug\yStore.Data.Migrations.IntegratedAspnetIdentity.resources
+D:\yStore\yStore.Data\obj\Debug\yStore.Data.Migrations.UpdateKey.resources

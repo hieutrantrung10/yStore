@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -7,6 +8,8 @@ using System.Web.Http;
 using yStore.Model.Models;
 using yStore.Services;
 using yStore.Web.Infrastructure.Core;
+using yStore.Web.Models;
+using yStore.Web.Infrastructure.Extensions;
 
 namespace yStore.Web.Api
 {
@@ -28,14 +31,16 @@ namespace yStore.Web.Api
             {
                 var listCategory = _postCategoryService.GetAll();
 
-                HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, listCategory);
+                var listCategoryVM = Mapper.Map<List<PostCategoryViewModel>>(listCategory);
+
+                HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, listCategoryVM);
 
 
                 return response;
             });
         }
-        [Route("create")]
-        public HttpResponseMessage Post(HttpRequestMessage request,PostCategory postCategory)
+        [Route("add")]
+        public HttpResponseMessage Post(HttpRequestMessage request,PostCategoryViewModel postCategoryVM)
         {
             return CreateHttpResponse(request, () =>
              {
@@ -46,16 +51,19 @@ namespace yStore.Web.Api
                  }
                  else
                  {
-                     _postCategoryService.Add(postCategory);
+                     PostCategory newPostCategory = new PostCategory();
+                     newPostCategory.UpdatePostCategory(postCategoryVM);
+
+                     var category = _postCategoryService.Add(newPostCategory);
                      _postCategoryService.SaveChanges();
 
-                     response = request.CreateResponse(HttpStatusCode.Created, postCategory);
+                     response = request.CreateResponse(HttpStatusCode.Created, category);
                  }
                  return response;
              });
         }
         [Route("update")]
-        public HttpResponseMessage Put(HttpRequestMessage request, PostCategory postCategory)
+        public HttpResponseMessage Put(HttpRequestMessage request, PostCategoryViewModel postCategoryVM)
         {
             return CreateHttpResponse(request, () =>
             {
@@ -66,10 +74,12 @@ namespace yStore.Web.Api
                 }
                 else
                 {
-                    _postCategoryService.Update(postCategory);
+                    var postCategoryDb = _postCategoryService.GetById(postCategoryVM.ID);
+                    postCategoryDb.UpdatePostCategory(postCategoryVM);
+                    _postCategoryService.Update(postCategoryDb);
                     _postCategoryService.SaveChanges();
 
-                    response = request.CreateResponse(HttpStatusCode.OK, postCategory);
+                    response = request.CreateResponse(HttpStatusCode.OK);
                 }
                 return response;
             });

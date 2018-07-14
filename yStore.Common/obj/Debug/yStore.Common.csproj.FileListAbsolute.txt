@@ -9,3 +9,4 @@ D:\yStore\yStore.Common\bin\Debug\yStore.Common.pdb
 D:\yStore\yStore.Common\obj\Debug\yStore.Common.csproj.CoreCompileInputs.cache
 D:\yStore\yStore.Common\obj\Debug\yStore.Common.dll
 D:\yStore\yStore.Common\obj\Debug\yStore.Common.pdb
+D:\yStore\yStore.Common\obj\Debug\yStore.Common.csprojAssemblyReference.cache
